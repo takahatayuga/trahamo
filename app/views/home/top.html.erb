@@ -1,11 +1,13 @@
 <div class="main top-main">
   <div class="top-message">
     <h2>TrySailのTryAngle Harmony</h2>
-    <p>過去回を聴いてみよう</p>
     <p>数値を入力してください</p>
-    <%= form_tag("search") do %>
-      <input type="number" name="number">
-      <input type="submit" value="検索">
-    <% end %>
+    <% random_num = rand(336) %>
+    <div class="tag">
+      <%= form_tag("search") do %>
+        <input type="number" name="number" value="<%= random_num %>">
+        <input type="submit" value="検索">
+      <% end %>
+    </div>
   </div>
 </div>
